@@ -345,6 +345,30 @@ a{ color:inherit; }
   gap: 14px;
   margin-top: 14px;
 }
+/* Case study: What I'd test next */
+
+.case-next{
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--stroke);
+}
+
+.test-list{
+  margin-top: 14px;
+  padding-left: 18px;
+  display: grid;
+  gap: 14px;
+}
+
+.test-list li{
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.test-list strong{
+  color: var(--text);
+  font-weight: 600;
+}
 
 @media (max-width: 900px){
   .insight-list{ grid-template-columns: 1fr; }
