@@ -19,6 +19,7 @@
 
 [data-theme="light"]{
   --bg: #f6f7fb;
+  --bg2: #e9ecf6;
   --panel: rgba(10,12,18,0.06);
   --panel2: rgba(10,12,18,0.04);
   --text: rgba(10,12,18,0.92);
@@ -32,13 +33,16 @@ html,body{ height:100%; }
 body{
   margin:0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
-  background: radial-gradient(1200px 700px at 20% 10%, var(--glowA), transparent 55%),
-              radial-gradient(900px 600px at 80% 20%, var(--glowB), transparent 50%),
-              radial-gradient(900px 600px at 60% 80%, var(--mint), transparent 55%),
-              var(--bg);
-  color: var(--text);
-  line-height:1.55;
-}
+  background:
+  radial-gradient(1200px 700px at 20% 10%, var(--glowA), transparent 55%),
+  radial-gradient(1000px 600px at 80% 15%, var(--glowB), transparent 60%),
+  linear-gradient(
+    180deg,
+    var(--bg) 0%,
+    var(--bg2) 35%,
+    var(--bg2) 65%,
+    var(--bg) 100%
+  );
 
 a{ color:inherit; }
 .container{
