@@ -314,6 +314,22 @@ a{ color:inherit; }
   gap: 14px;
   padding: 14px 0 18px;
 }
+/* =========================
+   Case Study Sections
+   ========================= */
+
+.case-section {
+  margin: 40px 0;
+  max-width: 72ch;
+}
+
+.case-section h2 {
+  margin-bottom: 12px;
+}
+
+.case-section h3 {
+  margin-top: 20px;
+}
 @media (max-width: 900px){
   .case-grid{ grid-template-columns: 1fr; }
 }
