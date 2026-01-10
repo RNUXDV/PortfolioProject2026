@@ -482,4 +482,6 @@ a{ color:inherit; }
 .case-section:last-of-type {
   margin-bottom: 48px;
 }
+/* Temporary: hide theme toggle until fixed */
+[data-theme-toggle] { display: none; }
 
