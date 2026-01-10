@@ -330,6 +330,87 @@ a{ color:inherit; }
 .case-section h3 {
   margin-top: 20px;
 }
+/* Case study deep dive sections */
+.case-section{
+  margin: 34px 0;
+}
+
+.case-section h2{
+  margin: 0 0 10px;
+}
+
+.insight-list{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 14px;
+}
+
+@media (max-width: 900px){
+  .insight-list{ grid-template-columns: 1fr; }
+}
+
+.insight{
+  border: 1px solid var(--stroke);
+  background: rgba(255,255,255,0.03);
+  border-radius: var(--radius);
+  padding: 14px;
+}
+
+.insight h3{
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.insight p{
+  margin: 0;
+  color: var(--muted);
+}
+
+.system-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 14px;
+}
+@media (max-width: 900px){
+  .system-grid{ grid-template-columns: 1fr; }
+}
+
+.screen-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 14px;
+}
+@media (max-width: 900px){
+  .screen-grid{ grid-template-columns: 1fr; }
+}
+
+.screen{
+  margin: 0;
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius);
+  background: rgba(255,255,255,0.03);
+  overflow: hidden;
+}
+
+.screen-box{
+  height: 180px;
+  display: grid;
+  place-items: center;
+  color: var(--faint);
+  background:
+    radial-gradient(600px 220px at 50% 40%, rgba(120,190,255,0.14), transparent 60%),
+    radial-gradient(500px 200px at 30% 30%, rgba(180,120,255,0.12), transparent 55%),
+    rgba(255,255,255,0.02);
+}
+
+.screen figcaption{
+  padding: 10px 12px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
 @media (max-width: 900px){
   .case-grid{ grid-template-columns: 1fr; }
 }
@@ -339,6 +420,25 @@ a{ color:inherit; }
   padding: 16px;
   background: linear-gradient(135deg, rgba(120,190,255,0.12), rgba(180,120,255,0.10));
   margin-bottom: 34px;
+  .callout {
+  margin-top: 26px;
+  opacity: 0.92;
+  background: linear-gradient(
+    135deg,
+    rgba(120,190,255,0.08),
+    rgba(180,120,255,0.06)
+  );
+}
+
+.callout h2{
+  margin-top: 0;
+}
+}
+.callout {
+  margin-bottom: 48px;
+}
+.case-section:last-of-type {
+  margin-bottom: 48px;
 }
 
 /* simple page fade-in */
