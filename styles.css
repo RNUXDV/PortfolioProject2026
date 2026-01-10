@@ -330,14 +330,7 @@ a{ color:inherit; }
 .case-section h3 {
   margin-top: 20px;
 }
-/* Case study deep dive sections */
-.case-section{
-  margin: 34px 0;
-}
 
-.case-section h2{
-  margin: 0 0 10px;
-}
 
 .insight-list{
   display: grid;
@@ -442,24 +435,18 @@ a{ color:inherit; }
   border: 1px solid var(--stroke);
   border-radius: var(--radius);
   padding: 16px;
-  background: linear-gradient(135deg, rgba(120,190,255,0.12), rgba(180,120,255,0.10));
-  margin-bottom: 34px;
-  .callout {
-  margin-top: 26px;
-  opacity: 0.92;
   background: linear-gradient(
     135deg,
     rgba(120,190,255,0.08),
     rgba(180,120,255,0.06)
   );
+  margin-top: 26px;
+  margin-bottom: 48px;
+  opacity: 0.92;
 }
 
 .callout h2{
   margin-top: 0;
-}
-}
-.callout {
-  margin-bottom: 48px;
 }
 .case-section:last-of-type {
   margin-bottom: 48px;
@@ -467,10 +454,31 @@ a{ color:inherit; }
 
 /* simple page fade-in */
 body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  color: var(--text);
+  line-height:1.55;
+
+  /* NEW background (replaces the old one) */
+  background:
+    radial-gradient(1200px 700px at 20% 10%, var(--glowA), transparent 55%),
+    radial-gradient(1000px 600px at 80% 15%, var(--glowB), transparent 60%),
+    linear-gradient(
+      180deg,
+      #07080c 0%,
+      #0b0f18 35%,
+      #0b0f18 65%,
+      #07080c 100%
+    );
+
+  background-attachment: fixed;
+
+  /* fade-in */
   opacity: 0;
   transform: translateY(6px);
   transition: opacity 380ms ease, transform 380ms ease;
 }
+
 body.is-ready{
   opacity: 1;
   transform: translateY(0);
