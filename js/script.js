@@ -21,46 +21,46 @@
 
   // Theme toggle
   (function () {
-  const STORAGE_KEY = "theme";
+    const STORAGE_KEY = "theme";
 
-  function getStoredTheme() {
-    try { return localStorage.getItem(STORAGE_KEY); } catch { return null; }
-  }
-  function setStoredTheme(v) {
-    try { localStorage.setItem(STORAGE_KEY, v); } catch {}
-  }
-  function removeStoredTheme() {
-    try { localStorage.removeItem(STORAGE_KEY); } catch {}
-  }
-
-  function setTheme(theme) {
-    const root = document.documentElement;
-
-    if (theme === "light") {
-      root.setAttribute("data-theme", "light");
-      setStoredTheme("light");
-    } else {
-      // Dark = default variables in :root (no attribute)
-      root.removeAttribute("data-theme");
-      removeStoredTheme();
+    function getStoredTheme() {
+      try { return localStorage.getItem(STORAGE_KEY); } catch { return null; }
     }
-  }
+    function setStoredTheme(v) {
+      try { localStorage.setItem(STORAGE_KEY, v); } catch {}
+    }
+    function removeStoredTheme() {
+      try { localStorage.removeItem(STORAGE_KEY); } catch {}
+    }
 
-  window.addEventListener("DOMContentLoaded", () => {
-    // Apply stored theme (only 'light' is stored)
-    const saved = getStoredTheme();
-    if (saved === "light") setTheme("light");
+    function setTheme(theme) {
+      const root = document.documentElement;
 
-    // year
-    const yearEl = document.querySelector("[data-year]");
-    if (yearEl) yearEl.textContent = String(new Date().getFullYear());
-  });
+      if (theme === "light") {
+        root.setAttribute("data-theme", "light");
+        setStoredTheme("light");
+      } else {
+        root.removeAttribute("data-theme");
+        removeStoredTheme();
+      }
+    }
 
-  document.addEventListener("click", (e) => {
-    const btn = e.target.closest("[data-theme-toggle]");
-    if (!btn) return;
+    window.addEventListener("DOMContentLoaded", () => {
+      const saved = getStoredTheme();
+      if (saved === "light") setTheme("light");
 
-    const isLight = document.documentElement.getAttribute("data-theme") === "light";
-    setTheme(isLight ? "dark" : "light");
-  });
-})();
+      const yearEl = document.querySelector("[data-year]");
+      if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+    });
+
+    document.addEventListener("click", (e) => {
+      const btn = e.target.closest("[data-theme-toggle]");
+      if (!btn) return;
+
+      const isLight =
+        document.documentElement.getAttribute("data-theme") === "light";
+      setTheme(isLight ? "dark" : "light");
+    });
+  })();
+
+})(); // ✅ THIS was missing
