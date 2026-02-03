@@ -2,18 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>About — Robert Newman</title>
+    <meta
+      name="description"
+      content="About Robert Newman — design developer focused on systems-first UX and frontend."
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/script.js" defer></script>
   </head>
+
   <body>
+    <a class="skip" href="#main">Skip to content</a>
+
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="index.html" aria-label="Home">
+        <a class="brand" href="index.html">
           <span class="brand-mark" aria-hidden="true"></span>
           <span class="brand-text">Robert Newman</span>
         </a>
+
         <nav class="nav" aria-label="Primary">
           <a href="index.html">Home</a>
           <a href="work.html">Work</a>
@@ -31,26 +39,130 @@
       </div>
     </header>
 
-    <main class="container">
-      <section class="page-head">
-        <h1>About</h1>
+    <main id="main" class="container">
+      <header class="page-head about-hero">
+        <h1 class="title">About</h1>
         <p class="lead">
-          UX designer shifting into frontend—building interfaces that feel alive
-          and intentional.
+          UX designer shifting into frontend — building systems-first interfaces
+          that feel alive, intentional, and user-respecting.
         </p>
-      </section>
 
-      <section class="card">
-        <h2>What I do</h2>
-        <p>
-          I design systems-first experiences: clear information architecture,
-          thoughtful interaction patterns, and UI that supports attention
-          instead of exploiting it.
-        </p>
-        <p class="muted">
-          Add: your short story, what you’re looking for, and what kinds of
-          roles you want.
-        </p>
+        <div class="tags" aria-label="Focus areas">
+          <span>Systems-first UX</span>
+          <span>Frontend build</span>
+          <span>Information architecture</span>
+          <span>Interaction design</span>
+        </div>
+      </header>
+
+      <section class="about-grid">
+        <!-- LEFT COLUMN -->
+        <article class="card about-card">
+          <h2>What I do</h2>
+          <p>
+            I turn messy product complexity into clear flows, clean UI, and
+            shippable frontends — with attention to how users feel, decide, and
+            move through a system.
+          </p>
+          <ul class="bullets">
+            <li>
+              <strong>UX:</strong> research synthesis, flows, IA, usability,
+              interaction patterns
+            </li>
+            <li>
+              <strong>UI:</strong> design systems thinking, visual hierarchy,
+              component consistency
+            </li>
+            <li>
+              <strong>Build:</strong> HTML/CSS/JS implementations that match the
+              intended experience
+            </li>
+          </ul>
+        </article>
+
+        <article class="card about-card">
+          <h2>How I work</h2>
+          <p>
+            I build by making the invisible visible: constraints, decisions,
+            tradeoffs, and the reason behind the interface.
+          </p>
+          <ul class="bullets">
+            <li>
+              <strong>Systems before screens:</strong> map the structure, then
+              design the moments.
+            </li>
+            <li>
+              <strong>Clarity wins:</strong> reduce cognitive load, remove
+              friction, tighten copy.
+            </li>
+            <li>
+              <strong>Ship + iterate:</strong> prototype, test, refine — then
+              build it for real.
+            </li>
+          </ul>
+        </article>
+
+        <!-- FULL WIDTH -->
+        <article class="card about-card span-2">
+          <h2>What I’m building</h2>
+          <p>
+            My flagship concept is <strong>DOT</strong> — a radial,
+            human-centered social platform exploring how interaction design can
+            reduce doomscroll behavior and support presence and agency. I’m
+            using it as a sandbox to connect product thinking, UX craft, and
+            frontend implementation.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="project-dot.html"
+              >Enter DOT Case Study</a
+            >
+            <a class="btn" href="work.html">View Selected Work</a>
+          </div>
+        </article>
+
+        <!-- LEFT COLUMN -->
+        <article class="card about-card">
+          <h2>Tools + strengths</h2>
+          <p class="muted">
+            I’m strongest where UX clarity meets implementation.
+          </p>
+          <div class="about-pill-grid" role="list">
+            <span role="listitem">Figma / FigJam</span>
+            <span role="listitem">HTML / CSS</span>
+            <span role="listitem">JavaScript</span>
+            <span role="listitem">IA + navigation</span>
+            <span role="listitem">Heuristics + usability</span>
+            <span role="listitem">Systems thinking</span>
+          </div>
+        </article>
+
+        <article class="card about-card">
+          <h2>What I’m looking for</h2>
+          <p>
+            A team that values craft and clarity — where I can contribute as a
+            design-minded builder (or builder-minded designer).
+          </p>
+          <ul class="bullets">
+            <li>UX / UI roles with strong interaction design</li>
+            <li>Design engineer / frontend-leaning UX pathways</li>
+            <li>Product teams that care about user respect, not gimmicks</li>
+          </ul>
+        </article>
+
+        <!-- FULL WIDTH -->
+        <article class="card about-card span-2 callout">
+          <h2>Quick note</h2>
+          <p class="muted">
+            If you’re reviewing this portfolio for hiring: I’m intentionally
+            shipping “clean and real” first — then expanding case studies with
+            deeper artifacts over time.
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="contact.html">Contact</a>
+            <a class="btn" href="work.html">See Work</a>
+          </div>
+        </article>
       </section>
     </main>
 
