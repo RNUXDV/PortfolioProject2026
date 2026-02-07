@@ -699,6 +699,16 @@ a {
   overflow: hidden;
 }
 
+.screen {
+  overflow: hidden;
+}
+
+.screen-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .screen-box {
   height: 180px;
   display: grid;
