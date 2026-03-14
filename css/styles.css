@@ -1242,6 +1242,17 @@ a {
 /* =========================
    Design Systems Foundations
    ========================= */
+.principle-card,
+.token-card,
+.type-item,
+.anatomy-preview,
+.anatomy-card-sample,
+.token-map,
+.state-card,
+.space-item {
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
 
 .tokens-title {
   margin: 0 0 6px;
@@ -1314,16 +1325,17 @@ a {
 
 .token-card {
   position: relative;
-  border: 1px solid var(--stroke);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.04);
   border-radius: var(--radius);
-  padding: 20px 18px 22px;
+  padding: 22px 22px 24px;
   box-shadow: 0 12px 34px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
   transition:
     border-color 0.35s ease,
     box-shadow 0.35s ease,
-    background 0.35s ease,
-    transform 0.25s ease;
+    transform 0.35s ease,
+    background 0.35s ease;
 }
 
 .token-card:hover {
@@ -1336,8 +1348,8 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  height: 3px;
-  opacity: 0.9;
+  height: 2px;
+  opacity: 0.72;
 }
 
 .token-card[data-accent="blue"] .token-accent-bar {
@@ -1628,12 +1640,17 @@ a {
   position: relative;
   border-radius: var(--radius);
   padding: 20px 18px 22px;
-  border: 1px solid var(--stroke);
-  background: var(--panel2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
   box-shadow:
     0 12px 34px rgba(0, 0, 0, 0.22),
     0 0 40px rgba(255, 255, 255, 0.02);
-  transition: all 0.3s ease;
+  overflow: hidden;
+  transition:
+    border-color 0.35s ease,
+    box-shadow 0.35s ease,
+    transform 0.35s ease,
+    background 0.35s ease;
 }
 
 .state-card h3 {
@@ -1679,10 +1696,10 @@ a {
 }
 
 .state-focus {
-  outline: 2px solid rgba(120, 190, 255, 0.55);
-  outline-offset: 3px;
+  outline: 2px solid rgba(120, 190, 255, 0.42);
+  outline-offset: 2px;
   box-shadow:
-    0 0 0 4px rgba(120, 190, 255, 0.25),
+    0 0 0 3px rgba(120, 190, 255, 0.16),
     0 12px 34px rgba(0, 0, 0, 0.22);
 }
 
