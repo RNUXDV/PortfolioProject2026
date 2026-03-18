@@ -8,6 +8,8 @@
     <script src="js/script.js" defer></script>
   </head>
   <body>
+    <a class="skip" href="#main">Skip to content</a>
+
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="index.html" aria-label="Home">
@@ -31,63 +33,86 @@
       </div>
     </header>
 
-    <main class="container">
+    <main id="main" class="container">
       <section class="page-head">
+        <p class="eyebrow">Portfolio</p>
         <h1>Selected Work</h1>
         <p class="lead">
-          Three projects. Clean story. Strong outcomes. Expand later.
+          Each project demonstrates a different layer of
+          what I do — designing with intent, building with code,
+          and solving real problems across research, e&#8209;commerce, and
+          interaction design.
         </p>
       </section>
 
-      <section class="stack">
-        <article class="card wide">
-          <div>
-            <h2>DOT (Flagship)</h2>
+      <section class="work-stack">
+
+        <a href="project-dot.html" class="work-card" data-accent="blue">
+          <div class="work-card-preview" aria-hidden="true">
+            <div class="preview-glow"></div>
+            <span class="preview-label">Radial UI</span>
+          </div>
+          <div class="work-card-body">
+            <span class="work-type">Concept · Interaction Design</span>
+            <h2>DOT <span class="badge-flagship">Flagship</span></h2>
             <p>
-              Radial navigation + intentional engagement. AI-aware safeguards.
-              “MySpace-level personalization, modernized.”
-            </p>
-            <p>
-              Designed to replace infinite scroll with deliberate, user-
-              controlled interaction.
+              A radial navigation system designed to replace infinite scroll
+              with deliberate, user-controlled exploration — rethinking how
+              people move through digital spaces.
             </p>
             <div class="tags">
-              <span>Concept</span><span>UX Research</span
-              ><span>Interaction Design</span><span>Prototype</span>
+              <span>UX Research</span>
+              <span>Interaction Design</span>
+              <span>Prototype</span>
             </div>
+            <span class="work-cta">View Case Study →</span>
           </div>
-          <a class="btn" href="project-dot.html">Open Case Study</a>
-        </article>
+        </a>
 
-        <article class="card wide">
-          <div>
+        <a href="project-dr-tongue.html" class="work-card" data-accent="purple">
+          <div class="work-card-preview" aria-hidden="true">
+            <div class="preview-glow"></div>
+            <span class="preview-label">E-Commerce</span>
+          </div>
+          <div class="work-card-body">
+            <span class="work-type">Redesign · UI/UX</span>
             <h2>Dr. Tongue's Toys</h2>
             <p>
-              Vintage toys e-commerce redesign focused on usability, conversion,
-              and system clarity
+              A vintage toys e-commerce redesign focused on usability,
+              conversion flow, and building a cohesive visual system from
+              a fragmented original.
             </p>
             <div class="tags">
-              <span>IA</span><span>Usability</span><span>UI</span>
+              <span>Information Architecture</span>
+              <span>Usability</span>
+              <span>UI Design</span>
             </div>
+            <span class="work-cta">View Case Study →</span>
           </div>
-          <a class="btn" href="project-dr-tongue.html">Open Case Study</a>
-        </article>
+        </a>
 
-        <article class="card wide">
-          <div>
-            <h2>Hooktheory(Client Project)</h2>
+        <a href="project-hooktheory.html" class="work-card" data-accent="mint">
+          <div class="work-card-preview" aria-hidden="true">
+            <div class="preview-glow"></div>
+            <span class="preview-label">UX Audit</span>
+          </div>
+          <div class="work-card-body">
+            <span class="work-type">Client Project · UX Research</span>
+            <h2>Hooktheory</h2>
             <p>
-              Research-driven UX audit and redesign of music theory learning
-              tools, focused on clarity, information architecture, and reducing
+              A research-driven UX audit and redesign of music theory learning
+              tools — improving clarity, information architecture, and reducing
               cognitive load for musicians and educators.
             </p>
             <div class="tags">
-              <span>UX Research</span><span>IA</span
-              ><span>Heuristics Evaluation</span><span>Design Systems</span>
+              <span>UX Research</span>
+              <span>Heuristic Evaluation</span>
+              <span>Design Systems</span>
             </div>
+            <span class="work-cta">View Case Study →</span>
           </div>
-          <a class="btn" href="project-hooktheory.html">Open Case Study</a>
-        </article>
+        </a>
+
       </section>
     </main>
 
