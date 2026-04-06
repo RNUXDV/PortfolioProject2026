@@ -6,7 +6,7 @@
     <title>Design Systems Foundations — Robert Newman</title>
     <meta
       name="description"
-      content="Design systems foundations for Robert Newman's portfolio work."
+      content="Design systems foundations by Robert Newman, showing the principles, tokens, typography, components, and frontend thinking behind his portfolio work."
     />
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/script.js" defer></script>
@@ -40,330 +40,385 @@
     </header>
 
     <main id="main" class="container">
-  <section class="page-head">
-    <p class="eyebrow">Systems · UI Foundations · Frontend Thinking</p>
-    <h1 class="title">
-      Design Systems <span class="accent">Foundations</span>
-    </h1>
-    <p class="lead">
-      These foundations define the visual, structural, and interaction rules
-      behind how I design and build. They help create consistency across case
-      studies, reusable UI patterns, and frontend implementation decisions.
-    </p>
-  </section>
-
-  <section class="ds-principles">
-    <h2 class="tokens-title">Design Principles</h2>
-    <p class="tokens-lead">
-      Core principles that guide the system’s visual language, interaction
-      patterns, and overall product experience.
-    </p>
-
-    <div class="principles-grid">
-      <article class="principle-card">
-        <h3>Clarity Over Complexity</h3>
-        <p>
-          Interfaces prioritize readability, hierarchy, and user understanding.
-          Visual noise is reduced so content can breathe.
+      <section class="page-head">
+        <p class="eyebrow">Systems · UI Foundations · Frontend Thinking</p>
+        <h1 class="title">
+          Design Systems <span class="accent">Foundations</span>
+        </h1>
+        <p class="lead">
+          These foundations define the visual, structural, and interaction rules
+          behind how I design and build. They support consistency across case
+          studies, reusable UI patterns, and front-end implementation decisions.
         </p>
-      </article>
+      </section>
 
-      <article class="principle-card">
-        <h3>Depth With Restraint</h3>
-        <p>
-          Glow, shadow, and layered surfaces create focus and atmosphere without
-          overwhelming the interface.
+      <section class="ds-principles">
+        <h2 class="tokens-title">Design Principles</h2>
+        <p class="tokens-lead">
+          Core principles that guide the system’s visual language, interaction
+          patterns, and overall product experience.
         </p>
-      </article>
 
-      <article class="principle-card">
-        <h3>Motion With Purpose</h3>
-        <p>
-          Motion reinforces meaning and affordance. Transitions are used to
-          support interaction clarity, never decoration alone.
-        </p>
-      </article>
+        <div class="principles-grid">
+          <article class="principle-card">
+            <h3>Clarity Over Complexity</h3>
+            <p>
+              Interfaces prioritize readability, hierarchy, and user
+              understanding. Visual noise is reduced so content can breathe.
+            </p>
+          </article>
 
-      <article class="principle-card">
-        <h3>Consistency Through Systems</h3>
-        <p>
-          Tokens, layout rules, and reusable patterns create scalable,
-          predictable design across screens and breakpoints.
-        </p>
-      </article>
+          <article class="principle-card">
+            <h3>Depth With Restraint</h3>
+            <p>
+              Glow, shadow, and layered surfaces create focus and atmosphere
+              without overwhelming the interface.
+            </p>
+          </article>
 
-      <article class="principle-card">
-        <h3>Calm, Atmospheric UI</h3>
-        <p>
-          A dark, layered palette supports focus, depth, and a more deliberate
-          reading experience across the interface.
-        </p>
-      </article>
+          <article class="principle-card">
+            <h3>Motion With Purpose</h3>
+            <p>
+              Motion reinforces meaning and affordance. Transitions are used to
+              support interaction clarity, never decoration alone.
+            </p>
+          </article>
 
-      <article class="principle-card">
-        <h3>Accessible By Default</h3>
-        <p>
-          Contrast, focus visibility, spacing, and state changes are considered
-          from the start to support inclusive interaction.
-        </p>
-      </article>
-    </div>
-  </section>
+          <article class="principle-card">
+            <h3>Consistency Through Systems</h3>
+            <p>
+              Tokens, layout rules, and reusable patterns create scalable,
+              predictable design across screens and breakpoints.
+            </p>
+          </article>
 
-  <section class="tokens-section">
-    <h2 class="tokens-title">System Tokens</h2>
-    <p class="tokens-lead">
-      Foundational primitives that shape the visual and interaction language
-      across my work.
-    </p>
+          <article class="principle-card">
+            <h3>Calm, Atmospheric UI</h3>
+            <p>
+              A dark, layered palette supports focus, depth, and a more
+              deliberate reading experience across the interface.
+            </p>
+          </article>
 
-    <div class="tokens-grid">
-      <article class="token-card" data-accent="blue">
-        <div class="token-accent-bar"></div>
-        <h3>Color Tokens</h3>
-        <p>
-          Atmospheric neutrals and restrained accent glows create depth,
-          hierarchy, and visual focus.
-        </p>
-        <div class="token-swatches">
-          <div class="token-swatch"><span class="swatch-dot swatch-bg"></span>--bg</div>
-          <div class="token-swatch"><span class="swatch-dot swatch-bg2"></span>--bg2</div>
-          <div class="token-swatch"><span class="swatch-dot swatch-panel"></span>--panel</div>
-          <div class="token-swatch"><span class="swatch-dot swatch-glowA"></span>--glowA</div>
-          <div class="token-swatch"><span class="swatch-dot swatch-glowB"></span>--glowB</div>
-          <div class="token-swatch"><span class="swatch-dot swatch-mint"></span>--mint</div>
+          <article class="principle-card">
+            <h3>Accessible By Default</h3>
+            <p>
+              Contrast, focus visibility, spacing, and state changes are
+              considered from the start to support inclusive interaction.
+            </p>
+          </article>
         </div>
-      </article>
+      </section>
 
-      <article class="token-card" data-accent="purple">
-        <div class="token-accent-bar"></div>
-        <h3>Typography Tokens</h3>
-        <p>
-          A three-tier text system supports hierarchy through primary,
-          supporting, and subtle interface text.
+      <section class="tokens-section">
+        <h2 class="tokens-title">System Tokens</h2>
+        <p class="tokens-lead">
+          Foundational primitives that shape the visual and interaction language
+          across my work.
         </p>
-        <div class="token-swatches">
-          <div class="token-swatch"><span class="swatch-dot swatch-text"></span>--text</div>
-          <div class="token-swatch"><span class="swatch-dot swatch-muted"></span>--muted</div>
-          <div class="token-swatch"><span class="swatch-dot swatch-faint"></span>--faint</div>
-        </div>
-      </article>
 
-      <article class="token-card" data-accent="mint">
-        <div class="token-accent-bar"></div>
-        <h3>Surface & Structure Tokens</h3>
-        <p>
-          Radius, panel surfaces, and stroke values help create consistency
-          across cards, containers, and layered UI.
+        <div class="tokens-grid">
+          <article class="token-card" data-accent="blue">
+            <div class="token-accent-bar"></div>
+            <h3>Color Tokens</h3>
+            <p>
+              Atmospheric neutrals and restrained accent glows create depth,
+              hierarchy, and visual focus.
+            </p>
+            <div class="token-swatches">
+              <div class="token-swatch">
+                <span class="swatch-dot swatch-bg"></span>--bg
+              </div>
+              <div class="token-swatch">
+                <span class="swatch-dot swatch-bg2"></span>--bg2
+              </div>
+              <div class="token-swatch">
+                <span class="swatch-dot swatch-panel"></span>--panel
+              </div>
+              <div class="token-swatch">
+                <span class="swatch-dot swatch-glowA"></span>--glowA
+              </div>
+              <div class="token-swatch">
+                <span class="swatch-dot swatch-glowB"></span>--glowB
+              </div>
+              <div class="token-swatch">
+                <span class="swatch-dot swatch-mint"></span>--mint
+              </div>
+            </div>
+          </article>
+
+          <article class="token-card" data-accent="purple">
+            <div class="token-accent-bar"></div>
+            <h3>Text Tokens</h3>
+            <p>
+              A three-tier text system supports hierarchy through primary,
+              supporting, and subtle interface text.
+            </p>
+            <div class="token-swatches">
+              <div class="token-swatch">
+                <span class="swatch-dot swatch-text"></span>--text
+              </div>
+              <div class="token-swatch">
+                <span class="swatch-dot swatch-muted"></span>--muted
+              </div>
+              <div class="token-swatch">
+                <span class="swatch-dot swatch-faint"></span>--faint
+              </div>
+            </div>
+          </article>
+
+          <article class="token-card" data-accent="mint">
+            <div class="token-accent-bar"></div>
+            <h3>Surface & Structure Tokens</h3>
+            <p>
+              Radius, panel surfaces, and stroke values help create consistency
+              across cards, containers, and layered UI.
+            </p>
+            <div class="token-swatches">
+              <div class="token-swatch">
+                <span class="swatch-dot swatch-panel"></span>--panel
+              </div>
+              <div class="token-swatch">
+                <span class="swatch-dot swatch-panel2"></span>--panel2
+              </div>
+              <div class="token-swatch">
+                <span class="swatch-dot swatch-stroke"></span>--stroke
+              </div>
+              <div class="token-swatch">
+                <span class="swatch-dot swatch-radius"></span>--radius
+              </div>
+              <div class="token-swatch">
+                <span class="swatch-dot swatch-container"></span>--container
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="type-section">
+        <h2 class="tokens-title">Typography Scale</h2>
+        <p class="tokens-lead">
+          A clear typographic hierarchy supports readability, rhythm, and
+          consistent visual structure across the system.
         </p>
-        <div class="token-swatches">
-          <div class="token-swatch"><span class="swatch-dot swatch-panel"></span>--panel</div>
-          <div class="token-swatch"><span class="swatch-dot swatch-panel2"></span>--panel2</div>
-          <div class="token-swatch"><span class="swatch-dot swatch-stroke"></span>--stroke</div>
-          <div class="token-swatch"><span class="swatch-dot swatch-radius"></span>--radius</div>
-          <div class="token-swatch"><span class="swatch-dot swatch-container"></span>--container</div>
+
+        <div class="type-grid">
+          <article class="type-item">
+            <div class="type-sample type-eyebrow">EYEBROW / OVERLINE</div>
+            <div class="type-baseline"></div>
+            <span class="type-label">Eyebrow — 0.78rem</span>
+          </article>
+
+          <article class="type-item">
+            <div class="type-sample type-display">
+              Heading 1 — Primary Title
+            </div>
+            <div class="type-baseline"></div>
+            <span class="type-label">Display — hero/title usage</span>
+          </article>
+
+          <article class="type-item">
+            <div class="type-sample type-lead-sample">
+              Lead paragraph introducing a section or concept.
+            </div>
+            <div class="type-baseline"></div>
+            <span class="type-label">Lead — intro and section framing</span>
+          </article>
+
+          <article class="type-item">
+            <div class="type-sample type-body-sample">
+              Body text for general reading, explanations, and system content.
+            </div>
+            <div class="type-baseline"></div>
+            <span class="type-label">Body — default reading content</span>
+          </article>
+
+          <article class="type-item">
+            <div class="type-sample type-muted-sample">
+              Muted text for secondary information and supporting UI copy.
+            </div>
+            <div class="type-baseline"></div>
+            <span class="type-label">Muted — secondary emphasis</span>
+          </article>
+
+          <article class="type-item">
+            <div class="type-sample type-faint-sample">
+              Faint caption or helper text for subtle supporting detail.
+            </div>
+            <div class="type-baseline"></div>
+            <span class="type-label">Caption — helper and utility text</span>
+          </article>
         </div>
-      </article>
-    </div>
-  </section>
+      </section>
 
-  <section class="type-section">
-    <h2 class="tokens-title">Typography Scale</h2>
-    <p class="tokens-lead">
-      A clear typographic hierarchy supports readability, rhythm, and consistent
-      visual structure across the system.
-    </p>
+      <section class="anatomy-section">
+        <h2 class="tokens-title">Component Anatomy</h2>
+        <p class="tokens-lead">
+          Reusable components rely on consistent structure, spacing, and
+          token-based decisions to stay readable and scalable.
+        </p>
 
-    <div class="type-grid">
-      <article class="type-item">
-        <div class="type-sample type-eyebrow">EYEBROW / OVERLINE</div>
-        <div class="type-baseline"></div>
-        <span class="type-label">Eyebrow — 0.78rem</span>
-      </article>
+        <div class="anatomy-grid">
+          <div class="anatomy-preview">
+            <article class="anatomy-card-sample" data-accent="blue">
+              <div class="token-accent-bar"></div>
+              <h3>Card Title</h3>
+              <p>
+                Supporting content demonstrates hierarchy, spacing, surface
+                treatment, and readable structure.
+              </p>
+              <span class="anatomy-link">Learn more →</span>
+            </article>
+          </div>
 
-      <article class="type-item">
-        <div class="type-sample type-display">Heading 1 — Primary Title</div>
-        <div class="type-baseline"></div>
-        <span class="type-label">Display — hero/title usage</span>
-      </article>
-
-      <article class="type-item">
-        <div class="type-sample type-lead-sample">
-          Lead paragraph introducing a section or concept.
+          <div class="token-map">
+            <h3>Structure & Token Mapping</h3>
+            <ul>
+              <li>
+                <strong>Accent bar</strong> creates visual identity and
+                emphasis.
+              </li>
+              <li>
+                <strong>Container</strong> uses panel surfaces and stroke for
+                depth.
+              </li>
+              <li><strong>Title</strong> uses primary text for hierarchy.</li>
+              <li>
+                <strong>Body copy</strong> uses muted text for readable support.
+              </li>
+              <li>
+                <strong>Radius and spacing</strong> keep the component calm and
+                consistent.
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="type-baseline"></div>
-        <span class="type-label">Lead — intro and section framing</span>
-      </article>
+      </section>
 
-      <article class="type-item">
-        <div class="type-sample type-body-sample">
-          Body text for general reading, explanations, and system content.
+      <section class="states-section">
+        <h2 class="tokens-title">Component States</h2>
+        <p class="tokens-lead">
+          Interactive components use consistent states to communicate
+          affordance, feedback, and accessibility.
+        </p>
+
+        <div class="states-grid">
+          <div class="state-item">
+            <div class="state-label">Default</div>
+            <div class="state-card state-default">
+              <div class="token-accent-bar"></div>
+              <h3>Card Title</h3>
+              <p>Neutral, resting state.</p>
+            </div>
+          </div>
+
+          <div class="state-item">
+            <div class="state-label">Hover</div>
+            <div class="state-card state-hover">
+              <div class="token-accent-bar"></div>
+              <h3>Card Title</h3>
+              <p>Indicates interactivity.</p>
+            </div>
+          </div>
+
+          <div class="state-item">
+            <div class="state-label">Active</div>
+            <div class="state-card state-active">
+              <div class="token-accent-bar"></div>
+              <h3>Card Title</h3>
+              <p>Pressed or engaged state.</p>
+            </div>
+          </div>
+
+          <div class="state-item">
+            <div class="state-label">Focus</div>
+            <div class="state-card state-focus">
+              <div class="token-accent-bar"></div>
+              <h3>Card Title</h3>
+              <p>Keyboard or programmatic focus.</p>
+            </div>
+          </div>
+
+          <div class="state-item">
+            <div class="state-label">Disabled</div>
+            <div class="state-card state-disabled">
+              <div class="token-accent-bar"></div>
+              <h3>Card Title</h3>
+              <p>Unavailable or inactive.</p>
+            </div>
+          </div>
         </div>
-        <div class="type-baseline"></div>
-        <span class="type-label">Body — default reading content</span>
-      </article>
+      </section>
 
-      <article class="type-item">
-        <div class="type-sample type-muted-sample">
-          Muted text for secondary information and supporting UI copy.
+      <section class="spacing-section">
+        <h2 class="tokens-title">Spacing Scale</h2>
+        <p class="tokens-lead">
+          A consistent spacing rhythm helps maintain hierarchy, breathing room,
+          and layout clarity across components and sections.
+        </p>
+
+        <div class="spacing-grid">
+          <div class="space-item">
+            <div class="space-bar space-4"></div>
+            <span class="space-label">4px — XS</span>
+          </div>
+
+          <div class="space-item">
+            <div class="space-bar space-8"></div>
+            <span class="space-label">8px — S</span>
+          </div>
+
+          <div class="space-item">
+            <div class="space-bar space-12"></div>
+            <span class="space-label">12px — M</span>
+          </div>
+
+          <div class="space-item">
+            <div class="space-bar space-16"></div>
+            <span class="space-label">16px — Base</span>
+          </div>
+
+          <div class="space-item">
+            <div class="space-bar space-24"></div>
+            <span class="space-label">24px — L</span>
+          </div>
+
+          <div class="space-item">
+            <div class="space-bar space-32"></div>
+            <span class="space-label">32px — XL</span>
+          </div>
         </div>
-        <div class="type-baseline"></div>
-        <span class="type-label">Muted — secondary emphasis</span>
-      </article>
+      </section>
 
-      <article class="type-item">
-        <div class="type-sample type-faint-sample">
-          Faint caption or helper text for subtle supporting detail.
-        </div>
-        <div class="type-baseline"></div>
-        <span class="type-label">Caption — helper and utility text</span>
-      </article>
-    </div>
-  </section>
-
-  <section class="anatomy-section">
-    <h2 class="tokens-title">Component Anatomy</h2>
-    <p class="tokens-lead">
-      Reusable components rely on consistent structure, spacing, and token-based
-      decisions to stay readable and scalable.
-    </p>
-
-    <div class="anatomy-grid">
-      <div class="anatomy-preview">
-        <article class="anatomy-card-sample" data-accent="blue">
-          <div class="token-accent-bar"></div>
-          <h3>Card Title</h3>
+      <section class="stack">
+        <article class="card">
+          <h2>How I use this system</h2>
           <p>
-            Supporting content demonstrates hierarchy, spacing, surface
-            treatment, and readable structure.
+            I use these foundations to keep visual decisions, component
+            behavior, and front-end structure aligned across portfolio pages and
+            product concepts. The goal is not just consistency in appearance,
+            but consistency in logic, hierarchy, and interaction.
           </p>
-          <span class="anatomy-link">Learn more →</span>
         </article>
-      </div>
+      </section>
 
-      <div class="token-map">
-        <h3>Structure & Token Mapping</h3>
-        <ul>
-          <li><strong>Accent bar</strong> creates visual identity and emphasis.</li>
-          <li><strong>Container</strong> uses panel surfaces and stroke for depth.</li>
-          <li><strong>Title</strong> uses primary text for hierarchy.</li>
-          <li><strong>Body copy</strong> uses muted text for readable support.</li>
-          <li><strong>Radius and spacing</strong> keep the component calm and consistent.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="states-section">
-    <h2 class="tokens-title">Component States</h2>
-    <p class="tokens-lead">
-      Interactive components use consistent states to communicate affordance,
-      feedback, and accessibility.
-    </p>
-
-    <div class="states-grid">
-      <div class="state-item">
-        <div class="state-label">Default</div>
-        <div class="state-card state-default">
-          <div class="token-accent-bar"></div>
-          <h3>Card Title</h3>
-          <p>Neutral, resting state.</p>
-        </div>
-      </div>
-
-      <div class="state-item">
-        <div class="state-label">Hover</div>
-        <div class="state-card state-hover">
-          <div class="token-accent-bar"></div>
-          <h3>Card Title</h3>
-          <p>Indicates interactivity.</p>
-        </div>
-      </div>
-
-      <div class="state-item">
-        <div class="state-label">Active</div>
-        <div class="state-card state-active">
-          <div class="token-accent-bar"></div>
-          <h3>Card Title</h3>
-          <p>Pressed or engaged state.</p>
-        </div>
-      </div>
-
-      <div class="state-item">
-        <div class="state-label">Focus</div>
-        <div class="state-card state-focus">
-          <div class="token-accent-bar"></div>
-          <h3>Card Title</h3>
-          <p>Keyboard or programmatic focus.</p>
-        </div>
-      </div>
-
-      <div class="state-item">
-        <div class="state-label">Disabled</div>
-        <div class="state-card state-disabled">
-          <div class="token-accent-bar"></div>
-          <h3>Card Title</h3>
-          <p>Unavailable or inactive.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="spacing-section">
-    <h2 class="tokens-title">Spacing Scale</h2>
-    <p class="tokens-lead">
-      A consistent spacing rhythm helps maintain hierarchy, breathing room, and
-      layout clarity across components and sections.
-    </p>
-
-    <div class="spacing-grid">
-      <div class="space-item">
-        <div class="space-bar space-4"></div>
-        <span class="space-label">4px — XS</span>
-      </div>
-
-      <div class="space-item">
-        <div class="space-bar space-8"></div>
-        <span class="space-label">8px — S</span>
-      </div>
-
-      <div class="space-item">
-        <div class="space-bar space-12"></div>
-        <span class="space-label">12px — M</span>
-      </div>
-
-      <div class="space-item">
-        <div class="space-bar space-16"></div>
-        <span class="space-label">16px — Base</span>
-      </div>
-
-      <div class="space-item">
-        <div class="space-bar space-24"></div>
-        <span class="space-label">24px — L</span>
-      </div>
-
-      <div class="space-item">
-        <div class="space-bar space-32"></div>
-        <span class="space-label">32px — XL</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="stack">
-    <article class="card">
-      <h2>Why This Matters</h2>
-      <p>
-        I approach design systems as a bridge between UX thinking and frontend
-        implementation. These foundations help me create work that is more
-        cohesive, scalable, and easier to build with code.
-      </p>
-      <div class="cta-row">
-        <a class="btn primary" href="project-dot.html">View DOT Case Study</a>
-        <a class="btn" href="work.html">Back to Selected Works</a>
-      </div>
-    </article>
-  </section>
-</main>
+      <section class="stack">
+        <article class="card">
+          <h2>Why This Matters</h2>
+          <p>
+            I approach design systems as a bridge between UX thinking and
+            frontend implementation. These foundations help me create work that
+            is more cohesive, scalable, and easier to translate into code.
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="project-dot.html"
+              >View DOT Case Study</a
+            >
+            <a class="btn" href="work.html">Back to Selected Works</a>
+          </div>
+        </article>
+      </section>
+    </main>
 
     <footer class="site-footer">
       <div class="container footer-inner">
