@@ -41,6 +41,7 @@ html[data-theme="light"] {
 html,
 body {
   min-height: 100%;
+  overflow-x: hidden;
 }
 
 html {
@@ -197,7 +198,9 @@ a {
   color: var(--text);
   text-decoration: none;
   cursor: pointer;
-  transition: background 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    background 0.25s ease,
+    box-shadow 0.25s ease;
 }
 .btn:hover {
   background: var(--panel);
@@ -406,13 +409,28 @@ a {
   border-radius: 0;
 }
 .home-card[data-accent="blue"] .home-card-icon {
-  background: linear-gradient(90deg, rgba(120, 190, 255, 0.4), rgba(180, 120, 255, 0.2), transparent);
+  background: linear-gradient(
+    90deg,
+    rgba(120, 190, 255, 0.4),
+    rgba(180, 120, 255, 0.2),
+    transparent
+  );
 }
 .home-card[data-accent="purple"] .home-card-icon {
-  background: linear-gradient(90deg, rgba(180, 120, 255, 0.4), rgba(120, 190, 255, 0.2), transparent);
+  background: linear-gradient(
+    90deg,
+    rgba(180, 120, 255, 0.4),
+    rgba(120, 190, 255, 0.2),
+    transparent
+  );
 }
 .home-card[data-accent="mint"] .home-card-icon {
-  background: linear-gradient(90deg, rgba(120, 255, 210, 0.35), rgba(120, 190, 255, 0.15), transparent);
+  background: linear-gradient(
+    90deg,
+    rgba(120, 255, 210, 0.35),
+    rgba(120, 190, 255, 0.15),
+    transparent
+  );
 }
 
 .home-card-body {
@@ -517,13 +535,28 @@ a {
 }
 
 .accent-card[data-accent="blue"] .card-accent-bar {
-  background: linear-gradient(90deg, rgba(120, 190, 255, 0.5), rgba(180, 120, 255, 0.25), transparent);
+  background: linear-gradient(
+    90deg,
+    rgba(120, 190, 255, 0.5),
+    rgba(180, 120, 255, 0.25),
+    transparent
+  );
 }
 .accent-card[data-accent="purple"] .card-accent-bar {
-  background: linear-gradient(90deg, rgba(180, 120, 255, 0.5), rgba(120, 190, 255, 0.25), transparent);
+  background: linear-gradient(
+    90deg,
+    rgba(180, 120, 255, 0.5),
+    rgba(120, 190, 255, 0.25),
+    transparent
+  );
 }
 .accent-card[data-accent="mint"] .card-accent-bar {
-  background: linear-gradient(90deg, rgba(120, 255, 210, 0.45), rgba(120, 190, 255, 0.2), transparent);
+  background: linear-gradient(
+    90deg,
+    rgba(120, 255, 210, 0.45),
+    rgba(120, 190, 255, 0.2),
+    transparent
+  );
 }
 
 .accent-card[data-accent="blue"]:hover {
@@ -609,20 +642,44 @@ a {
 
 .work-card[data-accent="blue"] .work-card-preview {
   background:
-    radial-gradient(300px 200px at 40% 45%, rgba(120, 190, 255, 0.14), transparent 65%),
-    radial-gradient(200px 180px at 70% 30%, rgba(180, 120, 255, 0.08), transparent 55%),
+    radial-gradient(
+      300px 200px at 40% 45%,
+      rgba(120, 190, 255, 0.14),
+      transparent 65%
+    ),
+    radial-gradient(
+      200px 180px at 70% 30%,
+      rgba(180, 120, 255, 0.08),
+      transparent 55%
+    ),
     rgba(255, 255, 255, 0.02);
 }
 .work-card[data-accent="purple"] .work-card-preview {
   background:
-    radial-gradient(300px 200px at 50% 50%, rgba(180, 120, 255, 0.14), transparent 65%),
-    radial-gradient(200px 180px at 30% 60%, rgba(120, 190, 255, 0.08), transparent 55%),
+    radial-gradient(
+      300px 200px at 50% 50%,
+      rgba(180, 120, 255, 0.14),
+      transparent 65%
+    ),
+    radial-gradient(
+      200px 180px at 30% 60%,
+      rgba(120, 190, 255, 0.08),
+      transparent 55%
+    ),
     rgba(255, 255, 255, 0.02);
 }
 .work-card[data-accent="mint"] .work-card-preview {
   background:
-    radial-gradient(300px 200px at 45% 50%, rgba(120, 255, 210, 0.12), transparent 65%),
-    radial-gradient(200px 180px at 65% 35%, rgba(120, 190, 255, 0.08), transparent 55%),
+    radial-gradient(
+      300px 200px at 45% 50%,
+      rgba(120, 255, 210, 0.12),
+      transparent 65%
+    ),
+    radial-gradient(
+      200px 180px at 65% 35%,
+      rgba(120, 190, 255, 0.08),
+      transparent 55%
+    ),
     rgba(255, 255, 255, 0.02);
 }
 
@@ -642,16 +699,30 @@ a {
   opacity: 0;
   transition: opacity 0.4s ease;
 }
-.work-card:hover .preview-glow { opacity: 1; }
+.work-card:hover .preview-glow {
+  opacity: 1;
+}
 
 .work-card[data-accent="blue"] .preview-glow {
-  background: radial-gradient(circle at 50% 50%, rgba(120, 190, 255, 0.1), transparent 70%);
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(120, 190, 255, 0.1),
+    transparent 70%
+  );
 }
 .work-card[data-accent="purple"] .preview-glow {
-  background: radial-gradient(circle at 50% 50%, rgba(180, 120, 255, 0.1), transparent 70%);
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(180, 120, 255, 0.1),
+    transparent 70%
+  );
 }
 .work-card[data-accent="mint"] .preview-glow {
-  background: radial-gradient(circle at 50% 50%, rgba(120, 255, 210, 0.1), transparent 70%);
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(120, 255, 210, 0.1),
+    transparent 70%
+  );
 }
 
 .preview-label {
@@ -700,7 +771,11 @@ a {
   text-transform: uppercase;
   padding: 3px 8px;
   border-radius: 6px;
-  background: linear-gradient(135deg, rgba(120, 190, 255, 0.2), rgba(180, 120, 255, 0.16));
+  background: linear-gradient(
+    135deg,
+    rgba(120, 190, 255, 0.2),
+    rgba(180, 120, 255, 0.16)
+  );
   border: 1px solid rgba(120, 190, 255, 0.2);
   color: rgba(160, 210, 255, 0.9);
   white-space: nowrap;
@@ -726,8 +801,12 @@ a {
   color: var(--faint);
   transition: color 0.3s ease;
 }
-.work-card:hover .work-cta { color: var(--text); }
-.home-card:hover .work-cta { color: var(--text); }
+.work-card:hover .work-cta {
+  color: var(--text);
+}
+.home-card:hover .work-cta {
+  color: var(--text);
+}
 
 .work-card[data-accent="blue"]:hover .work-cta {
   color: rgba(160, 210, 255, 0.95);
@@ -991,7 +1070,6 @@ a {
   }
 }
 
-
 /* =========================
    Contact Page
    ========================= */
@@ -1037,7 +1115,9 @@ a {
   border-radius: 14px;
   border: 1px solid var(--stroke);
   background: rgba(255, 255, 255, 0.03);
-  transition: background 0.25s ease, border-color 0.25s ease;
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease;
 }
 .link-row:hover {
   background: rgba(255, 255, 255, 0.06);
@@ -1175,7 +1255,9 @@ a {
   border-radius: var(--radius);
   padding: 12px 14px;
   background: rgba(255, 255, 255, 0.03);
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 .metric:hover {
   border-color: rgba(120, 190, 255, 0.18);
@@ -1259,7 +1341,10 @@ a {
   background: rgba(255, 255, 255, 0.03);
   border-radius: var(--radius);
   padding: 14px;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
 }
 .insight:hover {
   background: rgba(255, 255, 255, 0.05);
@@ -1425,7 +1510,9 @@ a {
   border-radius: var(--radius);
   padding: 20px;
   box-shadow: 0 12px 34px rgba(0, 0, 0, 0.22);
-  transition: background 0.25s ease, border-color 0.25s ease;
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .principle-card:hover {
@@ -1559,7 +1646,9 @@ a {
   background: rgba(255, 255, 255, 0.03);
   color: var(--faint);
   font-size: 0.85rem;
-  transition: background 0.25s ease, border-color 0.25s ease;
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .token-swatch:hover {
@@ -1575,19 +1664,53 @@ a {
   flex-shrink: 0;
 }
 
-.swatch-bg { background: var(--bg); }
-.swatch-bg2 { background: var(--bg2); }
-.swatch-panel { background: rgba(255, 255, 255, 0.08); }
-.swatch-panel2 { background: rgba(255, 255, 255, 0.04); }
-.swatch-stroke { background: rgba(255, 255, 255, 0.14); }
-.swatch-glowA { background: var(--glowA); }
-.swatch-glowB { background: var(--glowB); }
-.swatch-mint { background: var(--mint); }
-.swatch-text { background: rgba(255, 255, 255, 0.9); }
-.swatch-muted { background: rgba(255, 255, 255, 0.65); }
-.swatch-faint { background: rgba(255, 255, 255, 0.42); }
-.swatch-radius { background: linear-gradient(135deg, rgba(120, 190, 255, 0.3), rgba(180, 120, 255, 0.2)); }
-.swatch-container { background: linear-gradient(135deg, rgba(120, 255, 210, 0.18), rgba(120, 190, 255, 0.15)); }
+.swatch-bg {
+  background: var(--bg);
+}
+.swatch-bg2 {
+  background: var(--bg2);
+}
+.swatch-panel {
+  background: rgba(255, 255, 255, 0.08);
+}
+.swatch-panel2 {
+  background: rgba(255, 255, 255, 0.04);
+}
+.swatch-stroke {
+  background: rgba(255, 255, 255, 0.14);
+}
+.swatch-glowA {
+  background: var(--glowA);
+}
+.swatch-glowB {
+  background: var(--glowB);
+}
+.swatch-mint {
+  background: var(--mint);
+}
+.swatch-text {
+  background: rgba(255, 255, 255, 0.9);
+}
+.swatch-muted {
+  background: rgba(255, 255, 255, 0.65);
+}
+.swatch-faint {
+  background: rgba(255, 255, 255, 0.42);
+}
+.swatch-radius {
+  background: linear-gradient(
+    135deg,
+    rgba(120, 190, 255, 0.3),
+    rgba(180, 120, 255, 0.2)
+  );
+}
+.swatch-container {
+  background: linear-gradient(
+    135deg,
+    rgba(120, 255, 210, 0.18),
+    rgba(120, 190, 255, 0.15)
+  );
+}
 
 .type-grid {
   display: grid;
@@ -1878,17 +2001,48 @@ a {
     inset 0 0 4px rgba(255, 255, 255, 0.05);
 }
 
-.space-4 { height: 4px; }
-.space-8 { height: 8px; }
-.space-12 { height: 12px; }
-.space-16 { height: 16px; }
-.space-24 { height: 24px; }
-.space-32 { height: 32px; }
+.space-4 {
+  height: 4px;
+}
+.space-8 {
+  height: 8px;
+}
+.space-12 {
+  height: 12px;
+}
+.space-16 {
+  height: 16px;
+}
+.space-24 {
+  height: 24px;
+}
+.space-32 {
+  height: 32px;
+}
 
 .space-label {
   color: var(--muted);
   font-size: 0.9rem;
   letter-spacing: 0.2px;
+}
+
+@media (max-width: 720px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .nav {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .nav a {
+    padding: 7px 9px;
+    font-size: 0.95rem;
+  }
 }
 
 /* =========================
@@ -1913,4 +2067,3 @@ a {
 [data-theme-toggle] {
   display: none;
 }
-
