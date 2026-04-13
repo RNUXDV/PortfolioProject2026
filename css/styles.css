@@ -861,6 +861,138 @@ a {
 }
 
 /* =========================
+   Services Page
+   ========================= */
+.services-head {
+  padding-bottom: 18px;
+}
+
+.services-hero {
+  padding: 6px 0 34px;
+}
+
+.services-hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.services-summary {
+  min-height: 100%;
+}
+
+.services-summary h2,
+.services-grid .card h2,
+.services-process-grid .card h2,
+.services-pricing-grid .card h2 {
+  margin: 0 0 10px;
+  font-size: 1.08rem;
+}
+
+.services-list {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  display: grid;
+  gap: 10px;
+}
+
+.services-list li {
+  line-height: 1.5;
+}
+
+.services-portal {
+  width: min(320px, 100%);
+}
+
+.section-intro {
+  margin-bottom: 10px;
+}
+
+.services-section {
+  padding: 4px 0 18px;
+}
+
+.services-section-title {
+  margin-bottom: 8px;
+  font-size: clamp(1.75rem, 3vw, 2.4rem);
+}
+
+.services-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.services-process-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  padding: 18px 0 34px;
+}
+
+.services-step-label {
+  margin: 0 0 8px;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--faint);
+}
+
+.services-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  padding: 18px 0 34px;
+}
+
+.services-price {
+  margin: 0 0 12px;
+  font-size: 1.8rem;
+  line-height: 1.1;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.pricing-card {
+  position: relative;
+}
+
+.featured-pricing {
+  background: linear-gradient(
+    135deg,
+    rgba(180, 120, 255, 0.09),
+    rgba(120, 190, 255, 0.06),
+    rgba(255, 255, 255, 0.04)
+  );
+  border-color: rgba(180, 120, 255, 0.2);
+}
+
+.featured-pricing:hover {
+  border-color: rgba(180, 120, 255, 0.28);
+  box-shadow:
+    0 16px 44px rgba(180, 120, 255, 0.09),
+    0 12px 34px rgba(0, 0, 0, 0.28);
+}
+
+.services-cta {
+  margin-top: 8px;
+}
+
+@media (max-width: 900px) {
+  .services-hero-grid,
+  .services-process-grid,
+  .services-pricing-grid,
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-portal {
+    margin-inline: auto;
+  }
+}
+
+
+/* =========================
    Contact Page
    ========================= */
 .contact-grid {
